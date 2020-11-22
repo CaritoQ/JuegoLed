@@ -23,7 +23,6 @@
  #define sw4 7
 
 int i=0; // Variable del if
-int a;
  
  void setup() {
   pinMode (led1,OUTPUT); //pin 8 como salida
