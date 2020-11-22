@@ -6,6 +6,7 @@
  *  Nombre: Carolina Quinatoa 
  *  Fecha: 23 de Noviembre del 2020
  * 
+ * El presente trabajo representa 4 juegos de leds diferentes que son activados por 4 switchs 
  */
 
  //Variables estáticas para leds
