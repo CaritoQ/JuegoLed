@@ -1,0 +1,154 @@
+/*  UNIVERSIDAD TÉCNICA DEL NORTE
+ *  FACULTAD DE INGENIERÍA EN CIENCIAS APLICADAS
+ *  CARRERA DE INGENIERÍA EN TELECOMUNICACIONES
+ *  SISTEMAS EMBEBIDOS 
+ *  
+ *  Nombre: Carolina Quinatoa 
+ *  Fecha: 23 de Noviembre del 2020
+ * 
+ */
+
+ //Variables estáticas para leds
+ #define led1 8
+ #define led2 9
+ #define led3 10
+ #define led4 11
+ #define led5 12
+ #define led6 13
+
+ // Variables para definir switchs
+ #define sw1 4
+ #define sw2 5
+ #define sw3 6
+ #define sw4 7
+
+int i=0; // Variable del if
+int a;
+ 
+ void setup() {
+  pinMode (led1,OUTPUT); //pin 8 como salida
+  pinMode (led2,OUTPUT); //pin 9 como salida
+  pinMode (led3,OUTPUT); //pin 10 como salida
+  pinMode (led4,OUTPUT); //pin 11 como salida
+  pinMode (led5,OUTPUT); //pin 12 como salida
+  pinMode (led6,OUTPUT); //pin 13 como salida
+  
+  pinMode(sw1,INPUT); //pin 4 como entrada
+  pinMode(sw2,INPUT); //pin 5 como entrada
+  pinMode(sw3,INPUT); //pin 6 como entrada
+  pinMode(sw4,INPUT); //pin 7 como entrada
+
+}
+void loop() {
+  
+    if (digitalRead(sw1)==HIGH){
+      if (i<10){
+    digitalWrite (led2,HIGH);
+    digitalWrite (led4,HIGH);
+    digitalWrite (led6,HIGH);
+    delay (500);
+    digitalWrite (led2,LOW);
+     digitalWrite (led4,LOW);
+      digitalWrite (led6,LOW);
+    delay (500);
+        i++; // i=i+1
+        }   
+      }
+   else 
+     if (digitalRead(sw2)==HIGH){
+      if (i<10){
+    digitalWrite (led1,HIGH);
+    digitalWrite (led3,HIGH);
+    digitalWrite (led5,HIGH);
+    delay (500);
+    digitalWrite (led1,LOW);
+     digitalWrite (led3,LOW);
+      digitalWrite (led5,LOW);
+    delay (500);
+    
+    i++; 
+        }      
+      }
+      else
+      if (digitalRead(sw3)==HIGH){
+     
+    digitalWrite (led1,HIGH);
+    delay (500);
+    digitalWrite (led1,LOW);
+   
+    digitalWrite (led2,HIGH);
+    delay (500);
+    digitalWrite (led2,LOW);
+
+    digitalWrite (led3,HIGH);
+    delay (500);
+    digitalWrite (led3,LOW);
+
+    digitalWrite (led4,HIGH);
+     delay (500);
+    digitalWrite (led4,LOW);
+   
+    digitalWrite (led5,HIGH);
+     delay (500);
+    digitalWrite (led5,LOW);
+   
+    digitalWrite (led6,HIGH);
+    delay (500);
+    digitalWrite (led6,LOW);
+       
+      }
+      else
+      if (digitalRead(sw4)==HIGH){
+        
+    digitalWrite (led1,HIGH);
+      delay (500);
+    digitalWrite (led3,HIGH);
+      delay (500);
+    digitalWrite (led5,HIGH);
+      delay (500);
+    digitalWrite (led2,HIGH);
+      delay (500);
+    digitalWrite (led4,HIGH);
+      delay (500);
+    digitalWrite (led6,HIGH);
+      delay (500);
+      
+    digitalWrite (led1,HIGH);
+    digitalWrite (led3,HIGH);
+    digitalWrite (led5,HIGH);
+    digitalWrite (led2,HIGH);
+    digitalWrite (led4,HIGH);
+    digitalWrite (led6,HIGH);
+    delay (500);
+    digitalWrite (led1,LOW);
+    digitalWrite (led3,LOW);
+    digitalWrite (led5,LOW);
+    digitalWrite (led2,LOW);
+    digitalWrite (led4,LOW);
+    digitalWrite (led6,LOW);   
+    delay (500);
+
+    digitalWrite (led1,HIGH);
+    digitalWrite (led2,HIGH);
+      delay (500);
+    digitalWrite (led3,HIGH);
+    digitalWrite (led4,HIGH);
+      delay (500);
+    digitalWrite (led5,HIGH);
+    digitalWrite (led6,HIGH);
+      delay (500);
+    digitalWrite (led1,LOW);
+    digitalWrite (led6,LOW);
+       delay (500);
+    digitalWrite (led5,LOW);
+    digitalWrite (led2,LOW);
+       delay (500);
+    digitalWrite (led4,LOW);
+    digitalWrite (led3,LOW);   
+    delay (500);
+    
+      }
+      
+    
+   }
+  
